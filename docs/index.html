@@ -4,26 +4,25 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Making free books with RStudio’s RMarkdown &amp; Bookdown</title>
-  <meta name="description" content="A mini bookdown tutorial book on how to make bookdown books." />
+  <title>R for Transportation Systems</title>
+  <meta name="description" content="A tutorial book on using R for transportation systems engineering and planning" />
   <meta name="generator" content="bookdown 0.32 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Making free books with RStudio’s RMarkdown &amp; Bookdown" />
+  <meta property="og:title" content="R for Transportation Systems" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:description" content="A mini bookdown tutorial book on how to make bookdown books." />
+  <meta property="og:description" content="A tutorial book on using R for transportation systems engineering and planning" />
   <meta name="github-repo" content="openscapes/series" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Making free books with RStudio’s RMarkdown &amp; Bookdown" />
+  <meta name="twitter:title" content="R for Transportation Systems" />
   
-  <meta name="twitter:description" content="A mini bookdown tutorial book on how to make bookdown books." />
+  <meta name="twitter:description" content="A tutorial book on using R for transportation systems engineering and planning" />
   
 
-<meta name="author" content="Julie Lowndes" />
+<meta name="author" content="G. Arvind Kumar" />
 
 
-<meta name="date" content="2023-02-04" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -71,12 +70,18 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Mini Bookdown Tutorial</a></li>
+<li><a href="./">R4Transport</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Welcome</a>
 <ul>
-<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#learn-all-about-bookdown"><i class="fa fa-check"></i><b>1.1</b> Learn all about Bookdown</a></li>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#motivation"><i class="fa fa-check"></i><b>1.1</b> Motivation</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#intended-audience"><i class="fa fa-check"></i><b>1.2</b> Intended Audience</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#logistics"><i class="fa fa-check"></i><b>1.3</b> Logistics</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#next-steps"><i class="fa fa-check"></i><b>1.4</b> Next Steps</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#caveat-emptor"><i class="fa fa-check"></i><b>1.5</b> Caveat Emptor</a></li>
+<li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#learning-to-learn"><i class="fa fa-check"></i><b>1.6</b> Learning to Learn</a></li>
+<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#about-me"><i class="fa fa-check"></i><b>1.7</b> About Me</a></li>
 </ul></li>
 <li class="chapter" data-level="2" data-path="setup.html"><a href="setup.html"><i class="fa fa-check"></i><b>2</b> Setting up Bookdown</a>
 <ul>
@@ -99,7 +104,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Making free books with RStudio’s RMarkdown &amp; Bookdown</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">R for Transportation Systems</a>
           </h1>
         </div>
 
@@ -108,34 +113,97 @@
 
             <section class="normal" id="section-">
 <div id="header">
-<h1 class="title">Making free books with RStudio’s RMarkdown &amp; Bookdown</h1>
-<p class="author"><em>Julie Lowndes</em></p>
-<p class="date"><em>2023-02-04</em></p>
+<h1 class="title">R for Transportation Systems</h1>
+<p class="author"><em>G. Arvind Kumar</em></p>
+<p class="date"><em>04 February, 2023</em></p>
 </div>
 <div id="welcome" class="section level1 hasAnchor" number="1">
 <h1><span class="header-section-number">Chapter 1</span> Welcome<a href="index.html#welcome" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>hi</p>
-<p>It’s possible to create beautiful books for free using <a href="http://rmarkdown.rstudio.com/">RStudio’s R Markdown</a> and Yihui Xie’s <a href="https://bookdown.org/yihui/bookdown/">bookdown</a> and hosting them on <a href="http://github.com">Github</a>. This is pretty new and incredibly cool. It is a really powerful way to communicate science using the same reproducible workflow you use for your analyses and collaborations.</p>
-<p>This tutorial borrows heavily from a lot of great tutorials and resources you should check out too – there are links throughout. It also parallels a previous tutorial <a href="https://jules32.github.io/rmarkdown-website-tutorial/">Making free websites with RStudio’s R Markdown</a>.</p>
-<p>The best way to learn is to follow along with your own laptop, but all are welcome. We’ll spend half the time with the tutorial and half the time for you to work on your own website and get help. If you bring your laptop please do this beforehand:</p>
-<ol style="list-style-type: decimal">
-<li>install <a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a></li>
-<li>create a <a href="(http://github.com)">GitHub</a> account (<a href="http://happygitwithr.com/github-acct.html">advice</a>)</li>
-<li>set up your computer to talk to GitHub
+<div id="motivation" class="section level2 hasAnchor" number="1.1">
+<h2><span class="header-section-number">1.1</span> Motivation<a href="index.html#motivation" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The motivation for writing this book is very simple : I wish it had existed when I was in grad school and slogging through semester-long courses on transportation systems planning &amp; economics.</p>
+<p><em>This book is a work in progress.</em></p>
+</div>
+<div id="intended-audience" class="section level2 hasAnchor" number="1.2">
+<h2><span class="header-section-number">1.2</span> Intended Audience<a href="index.html#intended-audience" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The intended audience for this book is grad students who have recently joined a master’s program in transportation engineering and/or planning in the Indian subcontinent.</p>
+<p>Given the intended audience, I have made the following assumptions :</p>
 <ul>
-<li>have RStudio linked directly (highly recommended) (<a href="http://happygitwithr.com/hello-git.html">instructions sections 8-14</a>)</li>
-<li>or install the <a href="https://desktop.github.com/">Desktop App</a></li>
-<li>or be familiar with git commands for the command line (<a href="https://try.github.io/levels/1/challenges/1">tutorial</a>)</li>
-</ul></li>
+<li><p>You already have a working knowledge of basic statistics &amp; probability</p></li>
+<li><p>You are willing to learn more about econometrics &amp; graph theory</p></li>
+<li><p>You want to code your way through your program</p></li>
+</ul>
+</div>
+<div id="logistics" class="section level2 hasAnchor" number="1.3">
+<h2><span class="header-section-number">1.3</span> Logistics<a href="index.html#logistics" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This book borrows heavily from a lot of great tutorials and resources – there are links throughout, like these :</p>
+<ul>
+<li><p><a href="https://youtube.com/playlist?list=PL1328115D3D8A2566">(ONR | YouTube) Statistics @ Khan Academy</a></p></li>
+<li><p><a href="https://www.youtube.com/playlist?list=PLC58778F28211FA19">(ONR | YouTube) Statistics @ Khan Academy</a></p></li>
+<li><p><a href="https://bookdown.org/hneth/i2ds/">(ONR | Book) Introduction to Data Science, by Neth (2022)</a></p></li>
+<li><p><a href="https://r4ds.had.co.nz/">(ONR | Book) R for Data Science, by Wickham &amp; Grolemund (2016)</a></p></li>
+<li><p><a href="https://www.tmwr.org/">(ONR | Book) Tidy Modelling with R, by Kuhn &amp; Silge (2022)</a></p></li>
+</ul>
+<p>All <em>online resources</em> - <strong>ONR</strong> - linked in this tutorial are <strong>free forever</strong> (including this tutorial).</p>
+<p>Sadly, the same cannot be said about the <em>offline resources</em> - <strong>OFR</strong> - (textbooks, research papers, etc.) - you are welcome to explore your university’s library. If you have to spend money, then compare prices <a href="https://www.indiabookstore.net/">here</a> first.</p>
+<p>If you’d like to <strong>give back,</strong> please consider making a donation to - <a href="https://cmrfodisha.gov.in/">Chief Minister’s Relief Fund, Odisha</a>. Odisha is one of the most disaster-prone states in India; <em>&gt;100 cyclones/typhoons in the last 2 centuries</em> : <a href="https://www.downtoearth.org.in/news/environment/cyclone-yaas-is-the-96th-tropical-cyclone-to-strike-odisha-in-130-years-77116">(1)</a> <a href="https://www.downtoearth.org.in/blog/natural-disasters/a-super-cyclone-ravaged-odisha-22-years-ago-on-this-day-our-learnings-and-way-forward-79943">(2)</a> <a href="https://www.downtoearth.org.in/news/historically-prone-to-cyclones-42421">(3)</a>.</p>
+</div>
+<div id="next-steps" class="section level2 hasAnchor" number="1.4">
+<h2><span class="header-section-number">1.4</span> Next Steps<a href="index.html#next-steps" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>This book is primarily intended to be used as a <em>self-learning resource.</em></p>
+<p>The best way to learn is to <em>follow along</em> with your own computer.</p>
+<p>Before you begin, please do the following :</p>
+<ol style="list-style-type: decimal">
+<li>Install <a href="https://cloud.r-project.org/bin/windows/base/">R</a></li>
+<li>Install <a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a></li>
+<li>Create a dedicated folder to save your work (this should not be located in your C: drive)</li>
 </ol>
-<hr />
-<p><strong>Examples:</strong></p>
-<p>We have been using bookdown for the Ocean Health Index: <a href="http://ohi-science.org/data-science-training"><strong>ohi-science.org/data-science-training</strong></a> and Openscapes: <a href="https://openscapes.org/series"><strong>openscapes.org/series</strong></a>.<br />
-And R Markdown is much more than books and websites – here’s a <a href="http://rmarkdown.rstudio.com/lesson-1.html"><strong>one-minute video about R Markdown</strong></a> to get you excited.</p>
-<hr />
-<div id="learn-all-about-bookdown" class="section level2 hasAnchor" number="1.1">
-<h2><span class="header-section-number">1.1</span> Learn all about Bookdown<a href="index.html#learn-all-about-bookdown" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>The best way to learn more about bookdown is from Yihui Xie himself. You can read his book <a href="https://bookdown.org/yihui/bookdown/">bookdown: Authoring Books and Technical Documents with R Markdown</a> or watch his webinar <a href="https://www.rstudio.com/resources/webinars/introducing-bookdown/">introducing bookdown</a>.</p>
+</div>
+<div id="caveat-emptor" class="section level2 hasAnchor" number="1.5">
+<h2><span class="header-section-number">1.5</span> Caveat Emptor<a href="index.html#caveat-emptor" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>I like learning the theoretical minimum to get started on any given topic, instead of aiming for perfection. I don’t care about marks/grades. <em>The book reflects this style.</em></p>
+<p>If you need help in understanding theory, reach out to your course TAs and/or Profs.</p>
+</div>
+<div id="learning-to-learn" class="section level2 hasAnchor" number="1.6">
+<h2><span class="header-section-number">1.6</span> Learning to Learn<a href="index.html#learning-to-learn" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Academia is a horribly messed up place to learn/live/work.</p>
+<p>If you struggle with :</p>
+<ul>
+<li><p><strong>Reading</strong>, then :</p>
+<ul>
+<li><p>Read <a href="https://www.goodreads.com/book/show/567610.How_to_Read_a_Book">(OFR | Book) How to Read a Book, by Adler &amp; Van Doren (1940)</a></p></li>
+<li><p>If you think asking someone to read a book if they want to learn how to read a book, is <em>slightly</em> ironical, then read <a href="https://fs.blog/how-to-read-a-book/">(ONR | Series of Articles) How to Read A Book, by Farnam Street</a></p></li>
+</ul></li>
+<li><p><strong>Writing</strong>, then :</p>
+<ul>
+<li><p>First, work on your English grammar (choose a book appropriate to your level)</p>
+<ul>
+<li><p><a href="https://www.goodreads.com/en/book/show/1420846">(OFR | Book) Essential English Grammar, by Murphy (2000)</a></p></li>
+<li><p><a href="https://www.goodreads.com/book/show/9805431-intermediate-english-grammar">(OFR | Book) Intermediate English Grammar, by Murphy (1999)</a></p></li>
+<li><p><a href="https://www.goodreads.com/book/show/2369615.Advanced_Grammar_in_Use">(OFR | Book) Advanced English Grammar, by Hewings (1999)</a></p></li>
+</ul></li>
+<li><p>And then, read the following books by William Zinsser :</p>
+<ul>
+<li><p><a href="https://www.goodreads.com/book/show/53343.On_Writing_Well">(OFR | Book) On Writing Well</a></p></li>
+<li><p><a href="https://www.goodreads.com/book/show/585474.Writing_to_Learn">(OFR | Book) Writing to Learn</a></p></li>
+</ul></li>
+<li><p>Finally, get started on writing in English for academia :</p>
+<ul>
+<li><p><a href="https://www.goodreads.com/book/show/201004.A_Manual_for_Writers_of_Research_Papers_Theses_and_Dissertations">(OFR | Book) A Manual for Writers of Research Papers, Theses, and Dissertations, by Turabian (7Ed)</a></p></li>
+<li><p><a href="https://www.goodreads.com/book/show/2543099.The_Craft_of_Research">(OFR | Book) The Craft of Research, by Booth (3Ed)</a></p></li>
+</ul></li>
+</ul></li>
+<li><p><strong>Motivation</strong>, then, read :</p>
+<ul>
+<li><p><a href="https://www.goodreads.com/book/show/6452796-drive">(OFR | Book) Drive, by Pink (2009)</a></p></li>
+<li><p><a href="https://www.goodreads.com/book/show/17286670-scarcity">(OFR | Book) Scarcity, by Mullainathan &amp; Shafir (2013)</a></p></li>
+</ul></li>
+</ul>
+</div>
+<div id="about-me" class="section level2 hasAnchor" number="1.7">
+<h2><span class="header-section-number">1.7</span> About Me<a href="index.html#about-me" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>I am a <a href="https://in.linkedin.com/in/g-arvind-kumar">civil engineer</a> who designs highways. When I’m not designing highways, I find myself <a href="https://goodreads.com/thereadingcat">reading non-fiction books on India, Psychology and History of Geometry &amp; Forecasting</a>, or eating biryani.</p>
+<p><em>Cats Rule !!!</em></p>
 
 </div>
 </div>

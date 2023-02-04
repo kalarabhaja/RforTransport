@@ -7,3 +7,10 @@ turn-bookdown-tutorial-into-awesome-book
 publish-awesome-book
 moving-forward
 write
+motivation
+intended-audience
+next-steps
+caveat-emptor
+learning-to-learn
+about-me
+logistics

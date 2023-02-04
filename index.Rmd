@@ -1,7 +1,7 @@
---- 
-title: "Making free books with RStudio’s RMarkdown & Bookdown"
-author: "Julie Lowndes"
-date: "`r Sys.Date()`"
+---
+title: "R for Transportation Systems"
+author: "G. Arvind Kumar"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography:
@@ -10,37 +10,109 @@ bibliography:
 biblio-style: apalike
 link-citations: yes
 github-repo: openscapes/series
-description: A mini bookdown tutorial book on how to make bookdown books.
+description: A tutorial book on using R for transportation systems engineering and planning
 ---
 
 # Welcome {#welcome}
 
-hi
+## Motivation
 
-It's possible to create beautiful books for free using [RStudio's R Markdown](http://rmarkdown.rstudio.com/) and Yihui Xie's [bookdown](https://bookdown.org/yihui/bookdown/) and hosting them on [Github](http://github.com). This is pretty new and incredibly cool. It is a really powerful way to communicate science using the same reproducible workflow you use for your analyses and collaborations.
+The motivation for writing this book is very simple : I wish it had existed when I was in grad school and slogging through semester-long courses on transportation systems planning & economics.
 
-This tutorial borrows heavily from a lot of great tutorials and resources you should check out too -- there are links throughout. It also parallels a previous tutorial [Making free websites with RStudio’s R Markdown](https://jules32.github.io/rmarkdown-website-tutorial/).
+*This book is a work in progress.*
 
-The best way to learn is to follow along with your own laptop, but all are welcome. We'll spend half the time with the tutorial and half the time for you to work on your own website and get help. If you bring your laptop please do this beforehand: 
+## Intended Audience
 
-1. install [RStudio](https://www.rstudio.com/products/rstudio/download/)
-1. create a [GitHub]((http://github.com)) account ([advice](http://happygitwithr.com/github-acct.html))
-1. set up your computer to talk to GitHub
-    - have RStudio linked directly (highly recommended) ([instructions sections 8-14](http://happygitwithr.com/hello-git.html))
-    - or install the [Desktop App](https://desktop.github.com/)
-    - or be familiar with git commands for the command line ([tutorial](https://try.github.io/levels/1/challenges/1))
+The intended audience for this book is grad students who have recently joined a master's program in transportation engineering and/or planning in the Indian subcontinent.
 
-----
+Given the intended audience, I have made the following assumptions :
 
+-   You already have a working knowledge of basic statistics & probability
 
-**Examples:**
+-   You are willing to learn more about econometrics & graph theory
 
-We have been using bookdown for the Ocean Health Index:  [**ohi-science.org/data-science-training**](http://ohi-science.org/data-science-training) and Openscapes: [**openscapes.org/series**](https://openscapes.org/series).  
-And R Markdown is much more than books and websites -- here's a [**one-minute video about R Markdown**](http://rmarkdown.rstudio.com/lesson-1.html) to get you excited. 
+-   You want to code your way through your program
 
-----
+## Logistics
 
-## Learn all about Bookdown
+This book borrows heavily from a lot of great tutorials and resources -- there are links throughout, like these :
 
-The best way to learn more about bookdown is from Yihui Xie himself. You can read his book [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/) or watch his webinar [introducing bookdown](https://www.rstudio.com/resources/webinars/introducing-bookdown/).
+-   [(ONR \| YouTube) Statistics \@ Khan Academy](https://youtube.com/playlist?list=PL1328115D3D8A2566)
 
+-   [(ONR \| YouTube) Statistics \@ Khan Academy](https://www.youtube.com/playlist?list=PLC58778F28211FA19)
+
+-   [(ONR \| Book) Introduction to Data Science, by Neth (2022)](https://bookdown.org/hneth/i2ds/)
+
+-   [(ONR \| Book) R for Data Science, by Wickham & Grolemund (2016)](https://r4ds.had.co.nz/)
+
+-   [(ONR \| Book) Tidy Modelling with R, by Kuhn & Silge (2022)](https://www.tmwr.org/)
+
+All *online resources* - **ONR** - linked in this tutorial are **free forever** (including this tutorial).
+
+Sadly, the same cannot be said about the *offline resources* - **OFR** - (textbooks, research papers, etc.) - you are welcome to explore your university's library. If you have to spend money, then compare prices [here](https://www.indiabookstore.net/) first.
+
+If you'd like to **give back,** please consider making a donation to - [Chief Minister's Relief Fund, Odisha](https://cmrfodisha.gov.in/). Odisha is one of the most disaster-prone states in India; *\>100 cyclones/typhoons in the last 2 centuries* : [(1)](https://www.downtoearth.org.in/news/environment/cyclone-yaas-is-the-96th-tropical-cyclone-to-strike-odisha-in-130-years-77116) [(2)](https://www.downtoearth.org.in/blog/natural-disasters/a-super-cyclone-ravaged-odisha-22-years-ago-on-this-day-our-learnings-and-way-forward-79943) [(3)](https://www.downtoearth.org.in/news/historically-prone-to-cyclones-42421).
+
+## Next Steps
+
+This book is primarily intended to be used as a *self-learning resource.*
+
+The best way to learn is to *follow along* with your own computer.
+
+Before you begin, please do the following :
+
+1.  Install [R](https://cloud.r-project.org/bin/windows/base/)
+2.  Install [RStudio](https://www.rstudio.com/products/rstudio/download/)
+3.  Create a dedicated folder to save your work (this should not be located in your C: drive)
+
+## Caveat Emptor
+
+I like learning the theoretical minimum to get started on any given topic, instead of aiming for perfection. I don't care about marks/grades. *The book reflects this style.*
+
+If you need help in understanding theory, reach out to your course TAs and/or Profs.
+
+## Learning to Learn
+
+Academia is a horribly messed up place to learn/live/work.
+
+If you struggle with :
+
+-   **Reading**, then :
+
+    -   Read [(OFR \| Book) How to Read a Book, by Adler & Van Doren (1940)](https://www.goodreads.com/book/show/567610.How_to_Read_a_Book)
+
+    -   If you think asking someone to read a book if they want to learn how to read a book, is *slightly* ironical, then read [(ONR \| Series of Articles) How to Read A Book, by Farnam Street](https://fs.blog/how-to-read-a-book/)
+
+-   **Writing**, then :
+
+    -   First, work on your English grammar (choose a book appropriate to your level)
+
+        -   [(OFR \| Book) Essential English Grammar, by Murphy (2000)](https://www.goodreads.com/en/book/show/1420846)
+
+        -   [(OFR \| Book) Intermediate English Grammar, by Murphy (1999)](https://www.goodreads.com/book/show/9805431-intermediate-english-grammar)
+
+        -   [(OFR \| Book) Advanced English Grammar, by Hewings (1999)](https://www.goodreads.com/book/show/2369615.Advanced_Grammar_in_Use)
+
+    -   And then, read the following books by William Zinsser :
+
+        -   [(OFR \| Book) On Writing Well](https://www.goodreads.com/book/show/53343.On_Writing_Well)
+
+        -   [(OFR \| Book) Writing to Learn](https://www.goodreads.com/book/show/585474.Writing_to_Learn)
+
+    -   Finally, get started on writing in English for academia :
+
+        -   [(OFR \| Book) A Manual for Writers of Research Papers, Theses, and Dissertations, by Turabian (7Ed)](https://www.goodreads.com/book/show/201004.A_Manual_for_Writers_of_Research_Papers_Theses_and_Dissertations)
+
+        -   [(OFR \| Book) The Craft of Research, by Booth (3Ed)](https://www.goodreads.com/book/show/2543099.The_Craft_of_Research)
+
+-   **Motivation**, then, read :
+
+    -   [(OFR \| Book) Drive, by Pink (2009)](https://www.goodreads.com/book/show/6452796-drive)
+
+    -   [(OFR \| Book) Scarcity, by Mullainathan & Shafir (2013)](https://www.goodreads.com/book/show/17286670-scarcity)
+
+## About Me
+
+I am a [civil engineer](https://in.linkedin.com/in/g-arvind-kumar) who designs highways. When I'm not designing highways, I find myself [reading non-fiction books on India, Psychology and History of Geometry & Forecasting](https://goodreads.com/thereadingcat), or eating biryani.
+
+*Cats Rule !!!*

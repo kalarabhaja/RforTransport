@@ -1,7 +1,7 @@
 ---
 title: "R for Transportation Systems"
 author: "G. Arvind Kumar"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
+date: "Last compiled on `r format(Sys.time(), '%d %B, %Y')`"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography:
@@ -51,7 +51,7 @@ All *online resources* - **ONR** - linked in this tutorial are **free forever** 
 
 Sadly, the same cannot be said about the *offline resources* - **OFR** - (textbooks, research papers, etc.) - you are welcome to explore your university's library. If you have to spend money, then compare prices [here](https://www.indiabookstore.net/) first.
 
-If you'd like to **give back,** please consider making a donation to - [Chief Minister's Relief Fund, Odisha](https://cmrfodisha.gov.in/). Odisha is one of the most disaster-prone states in India; *\>100 cyclones/typhoons in the last 2 centuries* : [(1)](https://www.downtoearth.org.in/news/environment/cyclone-yaas-is-the-96th-tropical-cyclone-to-strike-odisha-in-130-years-77116) [(2)](https://www.downtoearth.org.in/blog/natural-disasters/a-super-cyclone-ravaged-odisha-22-years-ago-on-this-day-our-learnings-and-way-forward-79943) [(3)](https://www.downtoearth.org.in/news/historically-prone-to-cyclones-42421).
+If you'd like to **give back,** please consider making a donation to - [Chief Minister's Relief Fund, Odisha](https://cmrfodisha.gov.in/). [Odisha](https://en.wikipedia.org/wiki/Odisha) is one of the most disaster-prone states in India; *\>100 cyclones/typhoons in the last one and half centuries* : [(1)](https://www.downtoearth.org.in/news/environment/cyclone-yaas-is-the-96th-tropical-cyclone-to-strike-odisha-in-130-years-77116) [(2)](https://www.downtoearth.org.in/blog/natural-disasters/a-super-cyclone-ravaged-odisha-22-years-ago-on-this-day-our-learnings-and-way-forward-79943) [(3)](https://www.downtoearth.org.in/news/historically-prone-to-cyclones-42421).
 
 ## Next Steps
 
@@ -113,6 +113,6 @@ If you struggle with :
 
 ## About Me
 
-I am a [civil engineer](https://in.linkedin.com/in/g-arvind-kumar) who designs highways. When I'm not designing highways, I find myself napping, or [reading non-fiction books on India, Psychology and History of Geometry & Forecasting](https://goodreads.com/thereadingcat), or eating biryani.
+I am a [civil engineer](https://in.linkedin.com/in/g-arvind-kumar) who designs highways. When I'm not designing highways, I find myself napping, or [reading non-fiction books](https://goodreads.com/thereadingcat) on India, Psychology and History of Geometry & Forecasting, or eating biryani.
 
 *Cats Rule !!!*

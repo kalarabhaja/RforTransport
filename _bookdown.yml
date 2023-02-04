@@ -1,7 +1,7 @@
-book_filename: "series"
+book_filename: "R4transport"
 language:
   ui:
-    chapter_name: "Chapter "
+    chapter_name: "Ch "
 rmd_files: [
   "index.Rmd",
   "setup.Rmd",

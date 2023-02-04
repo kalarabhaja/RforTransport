@@ -67,7 +67,7 @@ Before you begin, please do the following :
 
 ## Caveat Emptor
 
-I like learning the theoretical minimum to get started on any given topic, instead of aiming for perfection. I don't care about marks/grades. *The book reflects this style.*
+I like learning the theoretical minimum to get started on any given topic, instead of aiming for perfection. *This book reflects the aforementioned style.*
 
 If you need help in understanding theory, reach out to your course TAs and/or Profs.
 

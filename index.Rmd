@@ -10,7 +10,7 @@ bibliography:
 biblio-style: apalike
 link-citations: yes
 github-repo: openscapes/series
-description: A tutorial book on using R for transportation systems engineering and planning
+description: A book on using R for transportation systems engineering and planning
 ---
 
 # Welcome {#welcome}
@@ -73,7 +73,7 @@ If you need help in understanding theory, reach out to your course TAs and/or Pr
 
 ## Learning to Learn
 
-Academia is a horribly messed up place to learn/live/work.
+Academia is a (horribly) difficult & messed up place to survive/learn/work.
 
 If you struggle with :
 
@@ -113,6 +113,6 @@ If you struggle with :
 
 ## About Me
 
-I am a [civil engineer](https://in.linkedin.com/in/g-arvind-kumar) who designs highways. When I'm not designing highways, I find myself [reading non-fiction books on India, Psychology and History of Geometry & Forecasting](https://goodreads.com/thereadingcat), or eating biryani.
+I am a [civil engineer](https://in.linkedin.com/in/g-arvind-kumar) who designs highways. When I'm not designing highways, I find myself napping, or [reading non-fiction books on India, Psychology and History of Geometry & Forecasting](https://goodreads.com/thereadingcat), or eating biryani.
 
 *Cats Rule !!!*
